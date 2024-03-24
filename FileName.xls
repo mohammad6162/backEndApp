@@ -1,0 +1,67 @@
+<table cellspacing="1" cellpadding="3" class="css_radius" border="0" id="dataGridView1" style="background-color:White;border-color:White;border-width:2px;border-style:Ridge;width:100%;text-align:center; background-color:#aabbcc;">
+	<tr style="color:#E7E7FF;background-color:#4A3C8C;font-weight:bold;">
+		<td>ردیف</td><td>عنوان مرسوله</td><td>بارکد </td><td>مخزن</td><td>وضعیت</td><td>تاریخ ثبت </td><td>خدمات ویژه</td><td>مقصد</td><td>شماره مرجع</td><td>نام ف</td><td>آدرس ف</td><td>نام گ</td><td>آدرس گ</td><td>کاربر</td><td>وزن</td><td>مالیات</td><td>بیمه</td><td>کرایه پستی</td><td>هزینه کل</td><td>شماره ثبت</td><td>ک ق استانی</td><td>ک ق سراسری</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>1</td><td>پاکت</td><td>917790236300060560746111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>فسا</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>زارع پور</td><td>-</td><td> حسيني </td><td>400</td><td>19800</td><td>20000</td><td>220000</td><td>239800</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>2</td><td>پاکت</td><td>917790236300059120003111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>کرج</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>دالوند</td><td>-</td><td> حسيني </td><td>400</td><td>23283</td><td>20000</td><td>258700</td><td>281983</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>3</td><td>پاکت</td><td>917790236300058000078111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>سيرجان</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>پور معصومي</td><td>-</td><td> حسيني </td><td>400</td><td>19800</td><td>20000</td><td>220000</td><td>239800</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>4</td><td>پاکت</td><td>917790236300057610000111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>تهران</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>الهام زاهدي</td><td>-</td><td> حسيني </td><td>400</td><td>23283</td><td>20000</td><td>258700</td><td>281983</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>5</td><td>پاکت</td><td>917790236300056000476111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>قائم شهر</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>مظفري</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>6</td><td>پاکت</td><td>917790236300055244656111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>رويان</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>عاطفه بور</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>7</td><td>پاکت</td><td>917790236300054810005111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>تبريز</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>قديري</td><td>-</td><td> حسيني </td><td>400</td><td>23283</td><td>20000</td><td>258700</td><td>281983</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>8</td><td>پاکت</td><td>917790236300053610004111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>رشت</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>موسوي</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>9</td><td>پاکت</td><td>917790236300052500004111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>رشت</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>امير رحمت</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>10</td><td>پاکت</td><td>917790236300051080048111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>ساري</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>احمد زاده </td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>11</td><td>پاکت</td><td>917790236300050780046111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>آمل</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>مهدي قاسمي</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>12</td><td>پاکت</td><td>917790236300049240476111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>قائم شهر</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>سحر جلال پور</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>13</td><td>پاکت</td><td>917790236300048070098111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>زاهدان</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>سجاد حسني</td><td>-</td><td> حسيني </td><td>400</td><td>19800</td><td>20000</td><td>220000</td><td>239800</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>14</td><td>پاکت</td><td>917790236300047274386111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>پره سر</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>پور آسفي</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>15</td><td>پاکت</td><td>917790236300046740003111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>کرج</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>محمد رضا جعفري</td><td>-</td><td> حسيني </td><td>400</td><td>23283</td><td>20000</td><td>258700</td><td>281983</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>16</td><td>پاکت</td><td>917790236300045640003111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>کرج</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>عباسي</td><td>-</td><td> حسيني </td><td>400</td><td>23283</td><td>20000</td><td>258700</td><td>281983</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>17</td><td>پاکت</td><td>917790236300044540003111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>کرج</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>اويسي</td><td>-</td><td> حسيني </td><td>400</td><td>23283</td><td>20000</td><td>258700</td><td>281983</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>18</td><td>پاکت</td><td>917790236300043220048111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>ساري</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>مريم نوري</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>19</td><td>پاکت</td><td>917790236300042950037111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>قم</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>رويا</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>20</td><td>پاکت</td><td>917790236300041840009111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>مشهد</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>ايران خواه</td><td>-</td><td> حسيني </td><td>400</td><td>23283</td><td>20000</td><td>258700</td><td>281983</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>21</td><td>پاکت</td><td>917790236300040150069111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>بروجرد</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>حسام خسرو پور</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>22</td><td>پاکت</td><td>917790236300039510597111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>مياندوآب</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>آشنا</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>23</td><td>پاکت</td><td>917790236300038390008111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>اصفهان</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>بهادري</td><td>-</td><td> حسيني </td><td>400</td><td>23283</td><td>20000</td><td>258700</td><td>281983</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>24</td><td>پاکت</td><td>917790236300037780003111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>کرج</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>مريم خدادادي</td><td>-</td><td> حسيني </td><td>400</td><td>23283</td><td>20000</td><td>258700</td><td>281983</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>25</td><td>پاکت</td><td>917790236300036760447111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>لنگرود</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>ياسين</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>26</td><td>پاکت</td><td>917790236300035100498111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>مينو دشت</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>طاهره سنجه ولي</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>27</td><td>پاکت</td><td>917790236300034630358111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>گرمسار</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>معيني</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>28</td><td>پاکت</td><td>917790236300033250473111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>اميرکلا</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>ميرزايي</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>29</td><td>پاکت</td><td>917790236300032220087111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>کاشان</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>اکبر بليات</td><td>-</td><td> حسيني </td><td>400</td><td>21330</td><td>20000</td><td>237000</td><td>258330</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>30</td><td>بسته</td><td>917790236300031270004111 </td><td>نقش تمبر</td><td>فعال</td><td>1402/12/27</td><td>پیشتاز عادی</td><td>رشت</td><td>2956</td><td>کيم بي بي</td><td>بندرعباس</td><td>غفاري</td><td>-</td><td> حسيني </td><td>400</td><td>26213</td><td>20000</td><td>291250</td><td>317463</td><td>-1</td><td>0</td><td>0</td>
+	</tr><tr style="color:Black;background-color:#DEDFDE;">
+		<td>0</td><td>&nbsp;</td><td>جمع کل</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>0</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>12000</td><td>657770</td><td>600000</td><td>7308550</td><td>7966320</td><td>0</td><td>0</td><td>0</td>
+	</tr>
+</table>

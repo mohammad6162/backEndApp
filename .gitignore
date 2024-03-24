@@ -1,4 +1,5 @@
 
 .tmp.driveupload
+.tmp.drivedownload
 node_modules
-
+images
