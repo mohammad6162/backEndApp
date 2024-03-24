@@ -14,7 +14,7 @@ route.get('/dlImgAds', controller.dlImgAds);// ارسال تصویر آگهی م
 
 route.post('/login', controller.login);// چک کردن و ورود کاربر   
 route.post('/regUser', controller.regUser);// چک کردن و ورود کاربر   
-route.post('/regWarning', controller.regWarning);// ثبت شکایت   
+route.post('/sendWarnign', controller.sendWarnign);// ثبت شکایت   
 
 route.get('/test', controller.test);// ارسال تصویر آگهی مناقاصات
 // route.get('/liststate',controller.ListAcountState)

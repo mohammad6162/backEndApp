@@ -1141,7 +1141,7 @@ exports.regUser = catcherro(async (req, res, next) => {
 
 //!<<--------------------  ثبت شکایت   -------------->>
 
-exports.regWarning = catcherro(async (req, res, next) => {
+exports.sendWarnign = catcherro(async (req, res, next) => {
 
     const model = req.body.model
 
