@@ -1139,6 +1139,35 @@ exports.regUser = catcherro(async (req, res, next) => {
 
 
 
+//!<<--------------------  ثبت شکایت   -------------->>
+
+exports.regWarning = catcherro(async (req, res, next) => {
+
+    const model = req.body.model
+
+
+    console.log(req.body.model);
+
+    db.query(`call gn_regWarnign_app(?)`, [model]).then((row, filds) => {
+
+        console.log(row[0][0]);
+
+        res.status(200).json({
+            msg: '',
+
+            length: row[0][0].length,
+            data: row[0][0]
+        })
+
+
+
+    }).catch(function (e) {
+        console.log(e.message);
+        return next(new AppError(e.message, 404, '100'));
+    })
+
+});
+
 //=============================== test functions=============
 
 exports.test = catcherro(async (req, res, next) => {
