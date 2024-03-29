@@ -127,7 +127,7 @@ exports.saveRent = catcherro(async (req, res, next) => {
 
     const objectRent = req.body.model;
 
-
+    console.log(objectRent);
     db.query('call rent_saveRent_app(?)', [objectRent]).then((row, filds) => {
 
 
@@ -682,3 +682,93 @@ exports.getobjTrip = catcherro(async (req, res, next) => {
         return next(new AppError(e.message, 404, '100'));
     })
 });
+
+
+
+
+//!<<---------------------- دریافت شی سفری برای نمایش آگهی ----------------
+exports.showAdsTrip = catcherro(async (req, res, next) => {
+
+
+    const idAdsMid = req.body.idAdsMid;
+
+
+
+    db.query('call PP_ShowAdsTrip_app(?)', [idAdsMid]
+    ).then((row, filds) => {
+
+        res.status(200).json({
+            msg: '',
+
+            length: row[0][0].length,
+            data: row[0][0]
+        })
+
+    }).catch(function (e) {
+        console.log(e);
+        return next(new AppError(e.message, 404, '100'));
+    })
+
+
+});
+
+
+
+//!<<---------------------- دریافت شی چاتری برای نمایش آگهی ----------------
+exports.showAdsRent = catcherro(async (req, res, next) => {
+
+
+    const idAdsMid = req.body.idAdsMid;
+
+
+
+    db.query('call PP_ShowAdsRent_app(?)', [idAdsMid]
+    ).then((row, filds) => {
+
+        res.status(200).json({
+            msg: '',
+
+            length: row[0][0].length,
+            data: row[0][0]
+        })
+
+    }).catch(function (e) {
+        console.log(e);
+        return next(new AppError(e.message, 404, '100'));
+    })
+
+
+});
+
+
+
+
+//!<<------------------ دریافت نمودار های گزارش آگهی ----------->>
+
+
+exports.reportChartAds = catcherro(async (req, res, next) => {
+
+
+    const idAdsMid = req.body.idAdsMid;
+
+
+
+    db.query('call reportCard_listChartAds_app(?)', [idAdsMid]
+    ).then((row, filds) => {
+        console.log(row[0][0])
+        res.status(200).json({
+            msg: '',
+
+            length: row[0][0].length,
+            data: row[0][0]
+        })
+
+    }).catch(function (e) {
+        console.log(e);
+        return next(new AppError(e.message, 404, '100'));
+    })
+
+
+});
+
+

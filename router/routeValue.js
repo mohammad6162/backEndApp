@@ -34,7 +34,7 @@ route.post('/seveRentEdit', controller.saveRentEdit);//ذخیره آگهی چا�
 route.post('/listinfoProposalTrip', controller.ListProposalTrip);//  نمایش پیشنهادات  قیمتی سفری به کاربر
 route.post('/listResponseSurvayUser', controller.ResponseSurvayUser);// نمایش نظرات دیگران درباره یک کاربر
 route.post('/infoShipUser', controller.infoShipUser);//اطلاعات فنی شناور کاربر
-route.post('/showAdsTrip', controller.showAdsTrip);//   دریافت شی سفری برای نمایش آگهی
+
 route.post('/delAdsRentTrip', controller.DelAdsTripRent);
 
 route.post('/rigWinner', controller.rigWinner);//ثبت برندگان مناقصه و بستن مناقصه

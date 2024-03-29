@@ -389,30 +389,6 @@ exports.infoShipUser = catcherro(async (req, res, next) => {
         return next(new AppError(e.message, 404, '100'));
     })
 });
-//---------------------- دریافت شی سفری برای نمایش آگهی ----------------
-exports.showAdsTrip = catcherro(async (req, res, next) => {
-
-
-    const idAdsMid = req.body.idAdsMid;
-
-
-
-    db.query('call ShowAdsTrip(?)', [idAdsMid]
-    ).then((row, filds) => {
-
-        res.status(200).json({
-            msg: '',
-
-            length: row[0][0].length,
-            data: row[0][0]
-        })
-
-    }).catch(function (e) {
-        console.log(e);
-        return next(new AppError(e.message, 404, '100'));
-    })
-});
-
 
 
 
