@@ -16,13 +16,15 @@ const server = http.createServer(express);
 const serverio = require('socket.io');
 const io = serverio(server)
 const routeProduct = require('./router/ownerProduct')
+var Moment = require('moment-timezone');
+// Moment().tz('Asia/Tehran').format();
 
 
 
 
-io.on('connection', (socket) => {
-  console.log('a user connected');
-});
+// io.on('connection', (socket) => {
+//   console.log('a user connected');
+// });
 
 
 

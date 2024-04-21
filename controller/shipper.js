@@ -20,7 +20,7 @@ exports.listSmallAdsTrip = catcherro(async (req, res, next) => {
     const model = req.body.model;
     console.log(model)
     db.query('call  ps_ListAdsTrip_app(?)', [model]).then((row, filds) => {
-        console.log(row[0][0])
+        console.log(row[0])
         res.status(200).json({
             msg: '',
 

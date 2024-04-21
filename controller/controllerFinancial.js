@@ -96,7 +96,7 @@ exports.checkOfferCode = catcherro(async (req, res, next) => {
             length: row[0].length,
             data: row[0][0]
         })
-        console.log(row[0][0])
+        console.log(row[0])
     }).catch(function (e) {
         console.log(e.message);
         return next(new AppError(e.message, 404, '100'));

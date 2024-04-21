@@ -59,15 +59,17 @@ exports.EditTrip = catcherro(async (req, res, next) => {
 
     upload.imageAds(req, res, function (err) {
         const model = req.body.model;
+        
 
         if (err) {
             console.log(err);
             return next(new AppError('not Upload', 404, '100'));
         } else {
+
             console.log(model);
             db.query(`call EditTrip(?)`, [model]
             ).then((row, filds) => {
-                console.log(row[0][0]);
+                console.log(row[0]);
 
                 res.status(200).json({
                     msg: '',
@@ -255,7 +257,7 @@ exports.ppListAdsRent = catcherro(async (req, res, next) => {
 
     db.query('CALL PP_ListAdsRent_app(?)', [model]).then((row, filds) => {
 
-        console.log(row[0][0])
+        console.log(row[0][0][0])
         res.status(200).json({
             length: row[0][0].length,
             data: row[0][0]
@@ -691,12 +693,12 @@ exports.showAdsTrip = catcherro(async (req, res, next) => {
 
 
     const idAdsMid = req.body.idAdsMid;
-
+    console.log(idAdsMid);
 
 
     db.query('call PP_ShowAdsTrip_app(?)', [idAdsMid]
     ).then((row, filds) => {
-
+        console.log(row[0]);
         res.status(200).json({
             msg: '',
 
