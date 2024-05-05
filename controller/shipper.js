@@ -76,7 +76,7 @@ exports.showAdsTripForShipper = catcherro(async (req, res, next) => {
 exports.showAdsRentForShipper = catcherro(async (req, res, next) => {
     const model = req.body.idAdsMid;
     console.log(model)
-    db.query('call PS_ShowAdsRentForShipper_app(?)', [model]).then((row, filds) => {
+    db.query('call PS_ShowAdsRent_app(?)', [model]).then((row, filds) => {
         console.log(row[0][0])
         res.status(200).json({
             msg: '',
@@ -197,6 +197,81 @@ exports.addProposal = catcherro(async (req, res, next) => {
         next(new AppError(e.message, 404, '100'))
     })
 });
+
+
+
+//!<<-------------------   دریافت مدل شناور    -------------------->>
+exports.getModelShip = catcherro(async (req, res, next) => {
+    const idShip = req.body.idShip;
+
+
+    db.query('call addShipUser_modelShip_app(?)', [idShip]).then((row, filds) => {
+        console.log(row[0][0])
+        res.status(200).json({
+            msg: '',
+
+            length: 1,
+            data: row[0][0]
+        })
+
+    }).catch((e) => {
+        console.log(e)
+        next(new AppError(e.message, 404, '100'))
+    })
+});
+
+
+
+
+
+//!<<-------------------   حذف /لغو شناور      -------------------->>
+exports.delShipUser = catcherro(async (req, res, next) => {
+    const model = req.body.model;
+
+
+    db.query('call addShipUser_DelShip_app(?)', [model]).then((row, filds) => {
+        console.log(row[0][0])
+        res.status(200).json({
+            msg: '',
+
+            length: 1,
+            data: [true]
+        })
+
+    }).catch((e) => {
+        console.log(e)
+        next(new AppError(e.message, 404, '100'))
+    })
+});
+
+
+
+
+
+
+
+//!<<------------------- کنسل کردن پیشنهاد----------------------->>
+
+
+exports.pscancellProposal = catcherro(async (req, res, next) => {
+    const model = req.body.model;
+
+
+    db.query('call ps_cancellProposal_app(?)', [model]).then((row, filds) => {
+        console.log(row[0][0])
+        res.status(200).json({
+            msg: '',
+
+            length: 1,
+            data: [true]
+        })
+
+    }).catch((e) => {
+        console.log(e)
+        next(new AppError(e.message, 404, '100'))
+    })
+});
+
 
 
 
