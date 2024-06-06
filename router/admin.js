@@ -9,6 +9,8 @@ const users = require('../controller/admin/users/userscontroller')
 
 const route = experss.Router();
 
+route.get('/urlImageSliderImage', controller.urlImageSliderImage);// ارسال تصویر مدارک شناور به کاربر
+
 route.get('/dlImgDocShip', controller.dlImgDocShip);// ارسال تصویر مدارک شناور به کاربر
 route.get('/dlImgAds', controller.dlImgAds);// ارسال تصویر آگهی مناقاصات
 

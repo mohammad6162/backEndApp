@@ -14,31 +14,31 @@ const catcherro = (fn) => {
 
 exports.sendAuthUser = catcherro(async (req, res, next) => {
 
-    const model = req.body.model;
-    const modelJson = JSON.parse(model);
-    console.log(model);
-    upload.docUser(req, res, function (err) {
 
+
+
+    upload.docUser(req, res, function (err) {
+        console.log(req.body);
+        const model = req.body.model;
 
         if (err) {
             console.log(err);
 
-            return next(new AppError('', 404, '100'));
+            return next(new AppError(err, 404, '100'));
         } else {
 
 
-            db.query('call addNewModelAuthUserApp(?)', [model]).then((row) => {
+            db.query('call profile_CompeletDateUser_app(?)', [model]).then((row) => {
 
-                console.log(row[0][0][0]);
 
-                if (!row[0][0][0].err) {
-                    res.status(200).json({
-                        length: row[0][0].length,
-                        data: row[0][0]
-                    })
-                } else {
-                    return next(new AppError('', 404, '100'));
-                }
+
+                res.status(200).json({
+                    msg: '',
+
+                    length: 1,
+                    data: [true]
+                })
+
 
             }
             ).catch((error) => {
@@ -88,7 +88,7 @@ exports.checkimo = catcherro(async (req, res, next) => {
 
     const model = req.body.model;
     console.log(model);
-    db.query('call checkImo(?)', [model]).then((row, filds) => {
+    db.query('call addShipUser_checkImo_app(?)', [model]).then((row, filds) => {
 
         res.status(200).json({
             msg: '',
@@ -115,11 +115,11 @@ exports.checkimo = catcherro(async (req, res, next) => {
 //*---------------- ارسال اطلاعات مدل شناور بارج و یدکش به سرور-----------
 
 
-exports.sendAuthShipUserBarjYadak = catcherro(async (req, res, next) => {
+exports.joinYadakBarj = catcherro(async (req, res, next) => {
 
     const model = req.body.model;
     console.log(model);
-    db.query('call saveShipBarjUser(?)', [model]).then((row) => {
+    db.query('call addShipUser_joinYadakBarj_app(?)', [model]).then((row) => {
 
 
 
@@ -186,25 +186,18 @@ exports.sendAuthShipUser = catcherro(async (req, res, next) => {
                 res.status(400).json({});
             } else {
 
-                db.query('call saveShipUser(?)', [model]).then((row) => {
+                db.query('call addShipUser_saveDateShip_app(?)', [model]).then((row) => {
 
 
 
 
 
-                    console.log(JSON.stringify(row[0][0][0]));
 
-                    if (!row[0][0][0].err) {
-                        res.status(200).json({
-                            length: row[0][0].length,
-                            data: [row[0][0][0].res]
-                        })
-                    }
-                    else {
 
-                        res.status(500).json({});
-
-                    }
+                    res.status(200).json({
+                        length: 1,
+                        data: [true]
+                    })
 
 
 
@@ -232,63 +225,66 @@ exports.sendAuthShipUser = catcherro(async (req, res, next) => {
 //*---------------- نوع ویرایش ارسال اطلاعات مدل شناور به سرور-----------
 
 
-exports.sendAuthShipUserEdit = catcherro(async (req, res, next) => {
+// exports.sendAuthShipUserEdit = catcherro(async (req, res, next) => {
 
 
 
-    try {
-        upload.uploadDocShipUser(req, res, function (err,) {
+//     try {
+//         upload.uploadDocShipUser(req, res, function (err,) {
 
-            const model = req.body.model;
+//             const model = req.body.model;
 
-            console.log(model);
+//             console.log(model);
 
-            if (err) {
-                res.status(400).json({});
-            } else {
+//             if (err) {
+//                 res.status(400).json({});
+//             } else {
 
-                db.query('call EditShipUser(?)', [model]).then((row) => {
-
-
-
-
-
-                    console.log(JSON.stringify(row[0][0][0]));
-
-                    if (!row[0][0][0].err) {
-                        res.status(200).json({
-                            length: 0,
-                            data: []
-                        })
-                    }
-                    else {
-
-                        res.status(500).json({});
-
-                    }
+//                 db.query('call addShipUser_EditShipUser_app(?)', [model]).then((row) => {
 
 
 
 
 
+//                     console.log(JSON.stringify(row[0][0][0]));
 
-                }
-                ).catch((error) => {
-                    console.log(error.message);
-                    next(new AppError(error.message, 404, '100'))
-                });
-            }
+//                     if (!row[0][0][0].err) {
+//                         res.status(200).json({
+//                             length: 0,
+//                             data: []
+//                         })
+//                     }
+//                     else {
 
-        })
+//                         res.status(500).json({});
 
-    } catch (error) {
-        res.status(404).json({});
-    }
-
-
+//                     }
 
 
-});
+
+
+
+
+//                 }
+//                 ).catch((error) => {
+//                     console.log(error.message);
+//                     next(new AppError(error.message, 404, '100'))
+//                 });
+//             }
+
+//         })
+
+//     } catch (error) {
+//         res.status(404).json({});
+//     }
+
+
+
+
+// });
+
+
+
 //*----------------   ثبت تیکت -----------
 
 
@@ -296,8 +292,8 @@ exports.sendTiket = catcherro(async (req, res, next) => {
 
     const model = req.body.model;
 
-
-    dbRep.query('call rigtiket(?)', [model]).then((row) => {
+    console.log(model);
+    db.query('call gn_rigTiket_app(?)', [model]).then((row) => {
 
 
 

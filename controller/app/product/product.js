@@ -14,9 +14,9 @@ const catcherro = (fn) => {
 exports.saveTrip = catcherro(async (req, res, next) => {
 
 
-
     upload.imageAds(req, res, function (err) {
         const model = req.body.model;
+
         if (err) {
             console.log(err);
             return next(new AppError('not Upload', 404, '100'));
@@ -59,7 +59,7 @@ exports.EditTrip = catcherro(async (req, res, next) => {
 
     upload.imageAds(req, res, function (err) {
         const model = req.body.model;
-        
+
 
         if (err) {
             console.log(err);
@@ -228,6 +228,8 @@ exports.getObjRent = catcherro(async (req, res, next) => {
 
 exports.ppListAdsTrip = catcherro(async (req, res, next) => {
     const model = req.body.model;
+
+    console.log(model);
 
     db.query('CALL PP_ListAdsTrip_app(?)', [model]).then((row, filds) => {
 
@@ -756,6 +758,69 @@ exports.reportChartAds = catcherro(async (req, res, next) => {
 
 
     db.query('call reportCard_listChartAds_app(?)', [idAdsMid]
+    ).then((row, filds) => {
+        console.log(row[0][0])
+        res.status(200).json({
+            msg: '',
+
+            length: row[0][0].length,
+            data: row[0][0]
+        })
+
+    }).catch(function (e) {
+        console.log(e);
+        return next(new AppError(e.message, 404, '100'));
+    })
+
+
+});
+
+
+
+
+
+//!<<------------------ اسلایدر سفری ----------->>
+
+
+exports.listSliderAdsTrip = catcherro(async (req, res, next) => {
+
+
+
+
+
+    db.query('call LH_SliderListAdsTrip_app()'
+    ).then((row, filds) => {
+        console.log(row[0][0])
+        res.status(200).json({
+            msg: '',
+
+            length: row[0][0].length,
+            data: row[0][0]
+        })
+
+    }).catch(function (e) {
+        console.log(e);
+        return next(new AppError(e.message, 404, '100'));
+    })
+
+
+});
+
+
+
+
+
+//!<<------------------  اسلایدر چاتری  ----------->>
+
+
+exports.listSliderAdsRent = catcherro(async (req, res, next) => {
+
+
+    const idAdsMid = req.body.idAdsMid;
+
+
+
+    db.query('call LH_SliderListAdsRent_app()'
     ).then((row, filds) => {
         console.log(row[0][0])
         res.status(200).json({

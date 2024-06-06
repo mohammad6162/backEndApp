@@ -7,6 +7,12 @@ const uploadBalams = require('../controller/upload')
 const route = experss.Router();
 
 
+
+route.post('/listSliderAdsTrip', controllerProduct.listSliderAdsTrip);//  اسلایدر سفری
+
+route.post('/listSliderAdsRent', controllerProduct.listSliderAdsRent);// اسلایدر چاتری
+
+
 route.post('/showAdsRent', controllerProduct.showAdsRent);//   دریافت شی چاتری برای نمایش آگهی
 route.post('/showAdsTrip', controllerProduct.showAdsTrip);//   دریافت شی سفری برای نمایش آگهی
 route.post('/reportChartAds', controllerProduct.reportChartAds);// دریافت داده ای نمدار

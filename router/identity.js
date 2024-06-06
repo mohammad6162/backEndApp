@@ -10,13 +10,13 @@ const uploadBalams = require('../controller/upload')
 const route = experss.Router();
 
 
-route.post('/sendAuthUser', uploadBalam.uploadFiles, controller.sendAuthUser)//ارسال مشخاصت کاربر
+route.post('/sendAuthUser', controller.sendAuthUser)//ارسال مشخاصت کاربر
 route.post('/SendOtp', controller.sendOtp)
 route.post('/CheckImo', controller.checkimo)
 
-route.post('/sendAuthShipUser', controller.sendAuthShipUser);
-route.post('/sendAuthShipUserBarjYadak', controller.sendAuthShipUserBarjYadak);
-route.post('/sendAuthShipUserEdit', controller.sendAuthShipUserEdit)
+// route.post('/sendAuthShipUser', controller.sendAuthShipUser);
+route.post('/joinYadakBarj', controller.joinYadakBarj);
+route.post('/sendAuthShipUserEdit', controller.sendAuthShipUser)// ارسال احراز هویت شناور
 route.post('/sendTiket', controller.sendTiket)
 
 module.exports = route;

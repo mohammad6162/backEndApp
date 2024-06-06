@@ -18,6 +18,25 @@ var storage = multer.diskStorage({
 });
 
 
+
+
+var storageSlider = multer.diskStorage({
+
+  destination: (req, file, callback) => {
+
+    callback(null, './image/imageSlider');
+
+  },
+  filename: (req, file, callback) => {
+
+    console.log(file.originalname)
+    callback(null, file.originalname);
+
+  }
+});
+
+
+
 var docship = multer.diskStorage({
 
   destination: (req, file, callback) => {
@@ -131,6 +150,8 @@ exports.signature = multer({ storage: signature }).single('image');
 
 exports.uploadDocShipUser = multer({ storage: docship }).array('image', 5);
 exports.imageAds = multer({ storage: imageAds }).single('image');
+
+exports.imageSlider = multer({ storage: storageSlider }).single('image');
 
 
 

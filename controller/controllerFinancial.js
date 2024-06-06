@@ -19,16 +19,14 @@ exports.InitializationInvoice = catcherro(async (req, res, next) => {
     db.query('call financial_InitializationInvoice(?)', [model]).then((row, filds) => {
         console.log(row[0][0][0])
 
-        if (row[0][0][0].err) {
-            return next(new AppError(e.message, 404, '100'));
-        } else {
-            res.status(200).json({
-                msg: '',
+        res.status(200).json({
+            msg: '',
 
-                length: row[0].length,
-                data: [row[0][0][0].res]
-            })
-        }
+            length: 1,
+            data: [row[0][0][0].res]
+        })
+
+
 
 
     }).catch(function (e) {

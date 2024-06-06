@@ -4,6 +4,7 @@ const ContBase = require('./controller/baseController')
 const routeValues = require('./router/routeValue')
 const routeAdmin = require('./router/admin')
 const routeUser = require('./router/routeUser')
+const ruteReports = require('./router/reports')
 const routeShip = require('./router/ship')
 const routeindentiti = require('./router/identity')
 const routebeta = require('./router/routebalambeta')
@@ -36,6 +37,7 @@ app.use(morgan('dev'));
 //     createParentPath: true
 // }));
 app.use('/contract', routeContacrt)
+app.use('/reports', ruteReports)
 app.use('/value', routeValues)
 app.use('/financial', financial)
 app.use('/product', routeProduct)

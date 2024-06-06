@@ -1011,6 +1011,26 @@ exports.sendNewAuthModel = catcherro(async (req, res, next) => {
 
 
 
+//!--------------------resive image ads-----------
+
+
+exports.urlImageSliderImage = catcherro(async (req, res, next) => {
+
+    const name = req.query.name
+    const options = {
+        root: './image/Slider'
+    };
+    res.sendFile(name, options, function (err) {
+
+
+
+        if (err) {
+            next(new AppError(err.message, 404, '100'))
+        }
+    })
+
+});
+
 //*--------------------resive image ads-----------
 
 

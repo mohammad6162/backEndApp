@@ -10,6 +10,39 @@ const catcherro = (fn) => {
 }
 
 
+//!<<------------ لیست شناور کاربر ------------------->>
+
+
+
+
+exports.listShipUser = catcherro(async (req, res, next) => {
+
+
+    const idUser = req.body.idUser;
+
+
+
+    db.query(`call addShipUser_listShip_app(?)`, [idUser]
+    ).then((row, filds) => {
+
+        console.log(row[0][0][0])
+        res.status(200).json({
+            length: 12,
+            msg: '',
+            data: row[0][0]
+        })
+
+
+
+
+
+
+
+    }).catch(function (e) {
+        console.log(e);
+        return next(new AppError(e.message, 404, '100'));
+    })
+});
 
 
 
@@ -50,21 +83,21 @@ exports.listProposalUser = catcherro(async (req, res, next) => {
 
 //!<<----------------------- لیست شناورهای کاربر---------------------->>
 
-exports.listShipUser = catcherro(async (req, res, next) => {
+exports.delShipUser = catcherro(async (req, res, next) => {
 
 
     const idUser = req.body.idUser;
     console.log(idUser)
 
 
-    db.query(`call listShipUser(?)`, [idUser]
+    db.query(`call addShipUser_DelShip_app(?)`, [idUser]
     ).then((row, filds) => {
 
-        console.log(row[0][0][0]['List'][1])
+
         res.status(200).json({
-            length: 12,
+            length: row[0][0].length,
             msg: '',
-            data: row[0][0][0].List == null ? [] : row[0][0][0].List
+            data: row[0][0]
         })
 
 
@@ -87,7 +120,7 @@ exports.PSpreRegistertionShip = catcherro(async (req, res, next) => {
 
     const model = req.body.model;
     console.log(model);
-    db.query('call PSpreRegistertaionShip(?)', [model]).then((row, filds) => {
+    db.query('call addShipUser_PishRegShip_app(?)', [model]).then((row, filds) => {
         console.log([row[0][0][0].lastid]);
 
         if (row[0][0][0].err == 1) {
