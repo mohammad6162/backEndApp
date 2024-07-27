@@ -1,6 +1,6 @@
 const AppError = require('../../error/error')
 const db = require('../../mysql/configDB').conDB;
-const dbRep = require('../../mysql/configDBReport').conDB;
+const dbRep = require('../../mysql/configDBReport').conDBRep;
 const sms = require('../sms')
 const upload = require('../upload')
 const fs = require('fs')
@@ -130,6 +130,79 @@ exports.reportSpecialTypeShip = catcherro(async (req, res, next) => {
             length: 0,
             data: row[0][0]
         })
+
+
+    }
+    ).catch((error) => {
+
+        next(new AppError(error.message, 404, '100'))
+    });
+
+
+
+
+});
+
+
+
+
+
+
+
+//!<<------------------- خاص دریافت  اطلاعات  تایپ  شناور --------------->>
+
+exports.getListQuize = catcherro(async (req, res, next) => {
+
+    const typeAds = req.body.typeAds
+    console.log(req.body);
+
+
+    dbRep.query('call reportCard_listQuizeSurvay_app(?)', [typeAds]).then((row) => {
+
+
+
+        res.status(200).json({
+            msg: '',
+
+            length: 0,
+            data: row[0][0]
+        })
+
+        console.log(row[0][0])
+
+    }
+    ).catch((error) => {
+
+        next(new AppError(error.message, 404, '100'))
+    });
+
+
+
+
+});
+
+
+
+
+//!<<------------------- ثبت نظر سنجی ----------- --------------->>
+
+exports.regSurvay = catcherro(async (req, res, next) => {
+
+    const model = req.body.model
+    console.log(model);
+
+
+    dbRep.query('call reportCard_regSurvay_app(?)', [model]).then((row) => {
+
+
+
+        res.status(200).json({
+            msg: '',
+
+            length: 0,
+            data: [true]
+        })
+
 
 
     }

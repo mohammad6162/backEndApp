@@ -1135,6 +1135,36 @@ exports.regUser = catcherro(async (req, res, next) => {
 
 
 
+//!<<--------------------  اطلاعات پایه اپ    -------------->>
+
+exports.baseDataApp = catcherro(async (req, res, next) => {
+
+
+
+    db.query(`call gn_baseData_App()`).then((row, filds) => {
+
+        console.log(row[0][0]);
+
+        res.status(200).json({
+            msg: '',
+
+            length: row[0][0].length,
+            data: row[0][0]
+        })
+
+
+
+    }).catch(function (e) {
+        console.log(e.message);
+        return next(new AppError(e.message, 404, '100'));
+    })
+
+});
+
+
+
+
+
 //!<<--------------------  ثبت شکایت   -------------->>
 
 exports.sendWarnign = catcherro(async (req, res, next) => {

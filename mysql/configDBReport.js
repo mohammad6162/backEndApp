@@ -23,7 +23,10 @@ const dbTiket = mysql.createPool({
     database: process.env.DBNAMERep,
     password: process.env.DBPASS,
     user: process.env.DBUSER,
-    host: process.env.DBHOST
+    host: process.env.DBHOST,
+    port: process.env.DBPORT
+
+
 
 });
 

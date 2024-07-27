@@ -183,7 +183,7 @@ exports.sendAuthShipUser = catcherro(async (req, res, next) => {
             console.log(model);
 
             if (err) {
-                res.status(400).json({});
+              next(new AppError(err.message, 404, '100'));
             } else {
 
                 db.query('call addShipUser_saveDateShip_app(?)', [model]).then((row) => {
@@ -214,6 +214,7 @@ exports.sendAuthShipUser = catcherro(async (req, res, next) => {
         })
 
     } catch (error) {
+        console.log(e)
         res.status(404).json({});
     }
 
